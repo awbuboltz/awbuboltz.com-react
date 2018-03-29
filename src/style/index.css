@@ -1,257 +1,78 @@
 @import url(reset.css);
 @import "https://fonts.googleapis.com/css?family=Ubuntu";
-p.socialicons {
-  list-style: none;
-  overflow: auto; }
-  p.socialicons a {
-    width: 32px;
-    height: 33px;
-    zoom: 0.85;
-    -moz-transform: scale(0.85);
-    -moz-transform-origin: 0 0;
-    display: inline-block;
-    margin-right: 0.75rem;
-    background: url(/socialSprite.png) no-repeat; }
-    p.socialicons a.stumbleupon {
-      background-position: 0 0; }
-    p.socialicons a.stumbleupon:hover {
-      background-position: -38px 0; }
-    p.socialicons a.digg {
-      background-position: 0 -36px; }
-    p.socialicons a.digg:hover {
-      background-position: -38px -36px; }
-    p.socialicons a.facebook {
-      background-position: 0 -73px; }
-    p.socialicons a.facebook:hover {
-      background-position: -38px -73px; }
-    p.socialicons a.twitter {
-      background-position: 0 -109px; }
-    p.socialicons a.twitter:hover {
-      background-position: -38px -109px; }
-    p.socialicons a.delicious {
-      background-position: 0 -146px; }
-    p.socialicons a.delicious:hover {
-      background-position: -38px -146px; }
-    p.socialicons a.flickr {
-      background-position: 0 -183px; }
-    p.socialicons a.flickr:hover {
-      background-position: -38px -183px; }
-    p.socialicons a.youtube {
-      background-position: 0 -219px; }
-    p.socialicons a.youtube:hover {
-      background-position: -38px -219px; }
-    p.socialicons a.skype {
-      background-position: 0 -256px; }
-    p.socialicons a.skype:hover {
-      background-position: -38px -256px; }
-    p.socialicons a.linkedin {
-      background-position: 0 -292px; }
-    p.socialicons a.linkedin:hover {
-      background-position: -38px -292px; }
-    p.socialicons a.vimeo {
-      background-position: 0 -329px; }
-    p.socialicons a.vimeo:hover {
-      background-position: -38px -329px; }
-    p.socialicons a.blogger {
-      background-position: 0 -365px; }
-    p.socialicons a.blogger:hover {
-      background-position: -38px -365px; }
-    p.socialicons a.tumblr {
-      background-position: 0 -402px; }
-    p.socialicons a.tumblr:hover {
-      background-position: -38px -402px; }
-    p.socialicons a.picasa {
-      background-position: 0 -438px; }
-    p.socialicons a.picasa:hover {
-      background-position: -38px -438px; }
-    p.socialicons a.wordpress {
-      background-position: 0 -475px; }
-    p.socialicons a.wordpress:hover {
-      background-position: -38px -475px; }
-    p.socialicons a.rss {
-      background-position: 0 -511px; }
-    p.socialicons a.rss:hover {
-      background-position: -38px -511px; }
-    p.socialicons a.mobileme {
-      background-position: 0 -548px; }
-    p.socialicons a.mobileme:hover {
-      background-position: -38px -548px; }
-    p.socialicons a.apple {
-      background-position: 0 -585px; }
-    p.socialicons a.apple:hover {
-      background-position: -38px -585px; }
-    p.socialicons a.gpluslight {
-      background-position: 0 -621px; }
-    p.socialicons a.gpluslight:hover {
-      background-position: -38px -621px; }
-    p.socialicons a.gplusdark {
-      background-position: 0 -694px; }
-    p.socialicons a.gplusdark:hover {
-      background-position: -38px -694px; }
-    p.socialicons a.twitterb {
-      background-position: 0 -658px; }
-    p.socialicons a.twitterb:hover {
-      background-position: -38px -658px; }
-    p.socialicons a.instagram {
-      background-position: 0 -731px; }
-    p.socialicons a.instagram:hover {
-      background-position: -38px -731px; }
-    p.socialicons a.myspace {
-      background-position: 0 -767px; }
-    p.socialicons a.myspace:hover {
-      background-position: -38px -767px; }
-    p.socialicons a.dribble {
-      background-position: 0 -803px; }
-    p.socialicons a.dribble:hover {
-      background-position: -38px -803px; }
-    p.socialicons a.blip {
-      background-position: 0 -838px; }
-    p.socialicons a.blip:hover {
-      background-position: -38px -838px; }
-    p.socialicons a.spotify {
-      background-position: 0 -874px; }
-    p.socialicons a.spotify:hover {
-      background-position: -38px -874px; }
-    p.socialicons a.grooveshark {
-      background-position: 0 -910px; }
-    p.socialicons a.grooveshark:hover {
-      background-position: -38px -910px; }
-    p.socialicons a.ichat {
-      background-position: 0 -946px; }
-    p.socialicons a.ichat:hover {
-      background-position: -38px -946px; }
-    p.socialicons a.github {
-      background-position: 0 -981px; }
-    p.socialicons a.github:hover {
-      background-position: -38px -981px; }
-    p.socialicons a.soundcloud {
-      background-position: 0 -1017px; }
-    p.socialicons a.soundcloud:hover {
-      background-position: -38px -1017px; }
-    p.socialicons a.pinterest {
-      background-position: 0 -1053px; }
-    p.socialicons a.pinterest:hover {
-      background-position: -38px -1053px; }
-    p.socialicons a.smugmug {
-      background-position: 0 -1088px; }
-    p.socialicons a.smugmug:hover {
-      background-position: -38px -1088px; }
-    p.socialicons a.virb {
-      background-position: 0 -1124px; }
-    p.socialicons a.virb:hover {
-      background-position: -38px -1124px; }
-    p.socialicons a.technorait {
-      background-position: 0 -1160px; }
-    p.socialicons a.technorait:hover {
-      background-position: -38px -1160px; }
-    p.socialicons a.slashdot {
-      background-position: 0 -1195px; }
-    p.socialicons a.slashdot:hover {
-      background-position: -38px -1195px; }
-    p.socialicons a.sharethis {
-      background-position: 0 -1231px; }
-    p.socialicons a.sharethis:hover {
-      background-position: -38px -1231px; }
-    p.socialicons a.posterous {
-      background-position: 0 -1267px; }
-    p.socialicons a.posterous:hover {
-      background-position: -38px -1267px; }
-    p.socialicons a.googleb {
-      background-position: 0 -1302px; }
-    p.socialicons a.googleb:hover {
-      background-position: -38px -1302px; }
-    p.socialicons a.reddit {
-      background-position: 0 -1338px; }
-    p.socialicons a.reddit:hover {
-      background-position: -38px -1338px; }
-    p.socialicons a.friendfollow {
-      background-position: 0 -1374px; }
-    p.socialicons a.friendfollow:hover {
-      background-position: -38px -1374px; }
-    p.socialicons a.designfloat {
-      background-position: 0 -1409px; }
-    p.socialicons a.designfloat:hover {
-      background-position: -38px -1409px; }
-    p.socialicons a.amazon {
-      background-position: 0 -1445px; }
-    p.socialicons a.amazon:hover {
-      background-position: -38px -1445px; }
-    p.socialicons a.netvibes {
-      background-position: 0 -1481px; }
-    p.socialicons a.netvibes:hover {
-      background-position: -38px -1481px; }
-    p.socialicons a.bing {
-      background-position: 0 -1516px; }
-    p.socialicons a.bing:hover {
-      background-position: -38px -1516px; }
-    p.socialicons a.yahoo {
-      background-position: 0 -1552px; }
-    p.socialicons a.yahoo:hover {
-      background-position: -38px -1552px; }
-    p.socialicons a.aim {
-      background-position: 0 -1588px; }
-    p.socialicons a.aim:hover {
-      background-position: -38px -1588px; }
-    p.socialicons a.email {
-      background-position: 0 -1623px; }
-    p.socialicons a.email:hover {
-      background-position: -38px -1623px; }
-    p.socialicons a.ebay {
-      background-position: 0 -1659px; }
-    p.socialicons a.ebay:hover {
-      background-position: -38px -1659px; }
-    p.socialicons a.paypal {
-      background-position: 0 -1695px; }
-    p.socialicons a.paypal:hover {
-      background-position: -38px -1695px; }
-    p.socialicons a.feedburner {
-      background-position: 0 -1730px; }
-    p.socialicons a.feedburner:hover {
-      background-position: -38px -1730px; }
-    p.socialicons a.podcast {
-      background-position: 0 -1766px; }
-    p.socialicons a.podcast:hover {
-      background-position: -38px -1766px; }
-    p.socialicons a.appstoreios {
-      background-position: 0 -1802px; }
-    p.socialicons a.appstoreios:hover {
-      background-position: -38px -1802px; }
-    p.socialicons a.itunes {
-      background-position: 0 -1837px; }
-    p.socialicons a.itunes:hover {
-      background-position: -38px -1837px; }
-    p.socialicons a.appstoremac {
-      background-position: 0 -1873px; }
-    p.socialicons a.appstoremac:hover {
-      background-position: -38px -1873px; }
-    p.socialicons a.yelp {
-      background-position: 0 -1909px; }
-    p.socialicons a.yelp:hover {
-      background-position: -38px -1909px; }
-    p.socialicons a.wthree {
-      background-position: 0 -1944px; }
-    p.socialicons a.wthree:hover {
-      background-position: -38px -1944px; }
-    p.socialicons a.etsy {
-      background-position: 0 -1980px; }
-    p.socialicons a.etsy:hover {
-      background-position: -38px -1980px; }
-    p.socialicons a.stackoverflow {
-      background-position: 0 -2016px; }
-    p.socialicons a.stackoverflow:hover {
-      background-position: -38px -2016px; }
-    p.socialicons a.foursquare {
-      background-position: 0 -2051px; }
-    p.socialicons a.foursquare:hover {
-      background-position: -38px -2051px; }
-    p.socialicons a.quora {
-      background-position: 0 -2087px; }
-    p.socialicons a.quora:hover {
-      background-position: -38px -2087px; }
-    p.socialicons a.photobucket {
-      background-position: 0 -2123px; }
-    p.socialicons a.photobucket:hover {
-      background-position: -38px -2123px; }
+.icon {
+  width: 32px;
+  height: 33px;
+  zoom: 0.85;
+  -moz-transform: scale(0.85);
+  -moz-transform-origin: 0 0;
+  display: inline-block;
+  margin-right: 0.75rem;
+  background: url(/socialSprite.png) no-repeat;
+  line-height: 0;
+  font-size: 0;
+  color: transparent;
+  float: left; }
+  .icon.facebook {
+    background-position: 0 -73px; }
+  .icon.facebook:hover {
+    background-position: -38px -73px; }
+  .icon.twitter {
+    background-position: 0 -109px; }
+  .icon.twitter:hover {
+    background-position: -38px -109px; }
+  .icon.youtube {
+    background-position: 0 -219px; }
+  .icon.youtube:hover {
+    background-position: -38px -219px; }
+  .icon.linkedin {
+    background-position: 0 -292px; }
+  .icon.linkedin:hover {
+    background-position: -38px -292px; }
+  .icon.wordpress {
+    background-position: 0 -475px; }
+  .icon.wordpress:hover {
+    background-position: -38px -475px; }
+  .icon.twitterb {
+    background-position: 0 -658px; }
+  .icon.twitterb:hover {
+    background-position: -38px -658px; }
+  .icon.instagram {
+    background-position: 0 -731px; }
+  .icon.instagram:hover {
+    background-position: -38px -731px; }
+  .icon.ichat {
+    background-position: 0 -946px; }
+  .icon.ichat:hover {
+    background-position: -38px -946px; }
+  .icon.github {
+    background-position: 0 -981px; }
+  .icon.github:hover {
+    background-position: -38px -981px; }
+  .icon.reddit {
+    background-position: 0 -1338px; }
+  .icon.reddit:hover {
+    background-position: -38px -1338px; }
+  .icon.amazon {
+    background-position: 0 -1445px; }
+  .icon.amazon:hover {
+    background-position: -38px -1445px; }
+  .icon.email {
+    background-position: 0 -1623px; }
+  .icon.email:hover {
+    background-position: -38px -1623px; }
+  .icon.paypal {
+    background-position: 0 -1695px; }
+  .icon.paypal:hover {
+    background-position: -38px -1695px; }
+  .icon.etsy {
+    background-position: 0 -1980px; }
+  .icon.etsy:hover {
+    background-position: -38px -1980px; }
+  .icon.stackoverflow {
+    background-position: 0 -2016px; }
+  .icon.stackoverflow:hover {
+    background-position: -38px -2016px; }
 
 body {
   background: #000;
