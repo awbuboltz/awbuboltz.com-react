@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+
 import Anchor from './Anchor';
+import SocialLinks from './SocialLinks';
 
 class InfoNugget extends Component {
 
@@ -11,8 +13,8 @@ class InfoNugget extends Component {
         if (p.url) {
             content = <Anchor {...this.props} />;
         }
-        else if (p.links) {
-
+        else if (p.socialLinks) {
+            content = <SocialLinks {...this.props} />
         }
         else {
             content = p.text;

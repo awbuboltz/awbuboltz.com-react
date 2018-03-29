@@ -38,10 +38,7 @@ class App extends Component {
                         <ul className='connect'>
                             <InfoNugget letter='E' url='mailto:andy@awbuboltz.com' text='andy@awbuboltz.com' target='_top'/>
                             <InfoNugget letter='C' text='507-402-6246' />
-                            <li>
-                                <h3>S</h3>
-                                <SocialLinks socialLinks={this.state.social} />
-                            </li>
+                            <InfoNugget letter='S' socialLinks={this.state.social} />
                         </ul>
 
                         <h3>more me</h3>
