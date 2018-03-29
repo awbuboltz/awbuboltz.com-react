@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import me from './images/me.jpg';
 import resume from './files/AndyBuboltzResume.pdf';
 
-import InfoNugget from './components/InfoNugget';
-import SocialLinks from './components/SocialLinks';
+import { InfoNugget } from './components/InfoNugget';
+import { SocialLinks } from './components/SocialLinks';
 
 class App extends Component {
 
@@ -38,7 +38,9 @@ class App extends Component {
                         <ul className='connect'>
                             <InfoNugget letter='E' url='mailto:andy@awbuboltz.com' text='andy@awbuboltz.com' target='_top'/>
                             <InfoNugget letter='C' text='507-402-6246' />
-                            <InfoNugget letter='S' socialLinks={this.state.social} />
+                            <InfoNugget letter='S'>
+                                <SocialLinks socialLinks={this.state.social} />
+                            </InfoNugget>
                         </ul>
 
                         <h3>more me</h3>
