@@ -15,63 +15,63 @@
   float: left; }
   .icon.facebook {
     background-position: 0 -73px; }
-  .icon.facebook:hover {
+  .icon.facebook.hover {
     background-position: -38px -73px; }
   .icon.twitter {
     background-position: 0 -109px; }
-  .icon.twitter:hover {
+  .icon.twitter.hover {
     background-position: -38px -109px; }
   .icon.youtube {
     background-position: 0 -219px; }
-  .icon.youtube:hover {
+  .icon.youtube.hover {
     background-position: -38px -219px; }
   .icon.linkedin {
     background-position: 0 -292px; }
-  .icon.linkedin:hover {
+  .icon.linkedin.hover {
     background-position: -38px -292px; }
   .icon.wordpress {
     background-position: 0 -475px; }
-  .icon.wordpress:hover {
+  .icon.wordpress.hover {
     background-position: -38px -475px; }
   .icon.twitterb {
     background-position: 0 -658px; }
-  .icon.twitterb:hover {
+  .icon.twitterb.hover {
     background-position: -38px -658px; }
   .icon.instagram {
     background-position: 0 -731px; }
-  .icon.instagram:hover {
+  .icon.instagram.hover {
     background-position: -38px -731px; }
   .icon.ichat {
     background-position: 0 -946px; }
-  .icon.ichat:hover {
+  .icon.ichat.hover {
     background-position: -38px -946px; }
   .icon.github {
     background-position: 0 -981px; }
-  .icon.github:hover {
+  .icon.github.hover {
     background-position: -38px -981px; }
   .icon.reddit {
     background-position: 0 -1338px; }
-  .icon.reddit:hover {
+  .icon.reddit.hover {
     background-position: -38px -1338px; }
   .icon.amazon {
     background-position: 0 -1445px; }
-  .icon.amazon:hover {
+  .icon.amazon.hover {
     background-position: -38px -1445px; }
   .icon.email {
     background-position: 0 -1623px; }
-  .icon.email:hover {
+  .icon.email.hover {
     background-position: -38px -1623px; }
   .icon.paypal {
     background-position: 0 -1695px; }
-  .icon.paypal:hover {
+  .icon.paypal.hover {
     background-position: -38px -1695px; }
   .icon.etsy {
     background-position: 0 -1980px; }
-  .icon.etsy:hover {
+  .icon.etsy.hover {
     background-position: -38px -1980px; }
   .icon.stackoverflow {
     background-position: 0 -2016px; }
-  .icon.stackoverflow:hover {
+  .icon.stackoverflow.hover {
     background-position: -38px -2016px; }
 
 body {

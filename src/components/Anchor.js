@@ -11,13 +11,18 @@ export class Anchor extends Component {
                 rel='noopener noreferrer'
                 target={p.target}
                 title={p.text}
-                className={this.props.icon ? `icon ${this.props.icon}` : ''}>{p.text}
+                onMouseEnter={this.props.onMouseEnter}
+                onMouseLeave={this.props.onMouseLeave}
+                className={this.props.class}>
+                {p.text}
             </a>
         );
     }
 }
 
 Anchor.defaultProps = {
-    icon: '',
-    target: '_blank'
+    class: '',
+    target: '_blank',
+    onMouseEnter: () => {},
+    onMouseLeave: () => {}
 };

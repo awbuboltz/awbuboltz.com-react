@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 
-import { Anchor } from './Anchor';
+import { SocialLink } from './SocialLink';
 
 export class SocialLinks extends Component {
 
     render() {
-        const links = this.props.socialLinks.map((linkData, i) => {
-            return <Anchor {...linkData} key={i} />;
+        const socialLinks = this.props.socialLinks.map((linkData, i) => {
+            return <SocialLink {...linkData} key={i} />;
         });
 
-        return (<p>{links}</p>);
+        return (<p>{socialLinks}</p>);
     }
 }
 
