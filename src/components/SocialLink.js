@@ -9,6 +9,8 @@ export class SocialLink extends Component {
         this.state = {
             hovered: false
         };
+
+        this.hoverHandler = this.hoverHandler.bind(this);
     }
 
     hoverHandler() {
