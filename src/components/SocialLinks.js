@@ -9,7 +9,7 @@ export class SocialLinks extends Component {
             return <SocialLink {...linkData} key={i} />;
         });
 
-        return (<p>{socialLinks}</p>);
+        return (<span>{socialLinks}</span>);
     }
 }
 
