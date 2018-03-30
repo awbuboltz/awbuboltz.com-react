@@ -11,28 +11,22 @@ export class SocialLink extends Component {
         };
     }
 
-    mouseEnterHandler() {
+    hoverHandler() {
         this.setState({
-            hovered: true
-        });
-    }
-
-    mouseLeaveHandler() {
-        this.setState({
-            hovered: false
+            // flip hover state
+            hovered: !this.state.hovered
         });
     }
 
     render() {
-        const baseClass = `icon ${this.props.icon}`;
-        const hoverClass = this.state.hovered ? ' hover' : '';
-        const className = `${baseClass}${hoverClass}`;
+        // if currently hovered, add hover class
+        const hoverClass = this.state.hovered ? 'hover' : '';
 
         return (
             <Anchor
-                class={className}
-                onMouseEnter={this.mouseEnterHandler.bind(this)}
-                onMouseLeave={this.mouseLeaveHandler.bind(this)}
+                class={`icon ${this.props.icon} ${hoverClass}`}
+                onMouseEnter={this.hoverHandler.bind(this)}
+                onMouseLeave={this.hoverHandler.bind(this)}
                 text={this.props.text}
                 url={this.props.url}
             />
