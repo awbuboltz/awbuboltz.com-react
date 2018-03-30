@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { Anchor } from './Anchor';
 
-export class InfoNugget extends Component {
+export class Nugget extends Component {
 
     render() {
         let content;

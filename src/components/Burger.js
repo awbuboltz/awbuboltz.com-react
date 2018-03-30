@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export class InfoBurger extends Component {
+export class Burger extends Component {
 
     render() {
         return (
