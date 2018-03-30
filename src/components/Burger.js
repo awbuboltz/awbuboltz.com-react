@@ -4,11 +4,8 @@ export class Burger extends Component {
 
     render() {
         return (
-            <div>
-                <h3>{this.props.title}</h3>
-                <ul className="connect">
-                    {this.props.children}
-                </ul>
+            <div className="component">
+                {this.props.children}
             </div>
         );
     }

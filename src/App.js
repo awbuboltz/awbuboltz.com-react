@@ -3,8 +3,8 @@ import me from './images/me.jpg';
 import resume from './files/Andy Buboltz Resume.pdf';
 
 import { Burger } from "./components/Burger";
-import { Meal } from "./components/Meal";
-import { Nugget } from './components/Nugget';
+import { Bun } from "./components/Bun";
+import { Patty } from './components/Patty';
 import { SocialLinks } from './components/SocialLinks';
 
 class App extends Component {
@@ -25,28 +25,28 @@ class App extends Component {
             <div className='fullHeight'>
                 <div className='shim' />
                 <div className='content'>
-                    <Meal>
+                    <Burger>
                         <img src={me} className='me' alt='me' />
                         <h1>Andy</h1>
                         <h1>Buboltz</h1>
                         <h2>Sr. Software Engineer</h2>
                         <h4>Jr. Woodworker</h4>
-                    </Meal>
+                    </Burger>
 
-                    <Meal>
-                        <Burger title="connect">
-                            <Nugget letter='E' url='mailto:andy@awbuboltz.com' text='andy@awbuboltz.com' target='_top'/>
-                            <Nugget letter='C' text='507-402-6246' />
-                            <Nugget letter='S'>
+                    <Burger>
+                        <Bun title="connect">
+                            <Patty letter='E' url='mailto:andy@awbuboltz.com' text='andy@awbuboltz.com' target='_top'/>
+                            <Patty letter='C' text='507-402-6246' />
+                            <Patty letter='S'>
                                 <SocialLinks socialLinks={this.state.social} />
-                            </Nugget>
-                        </Burger>
+                            </Patty>
+                        </Bun>
 
-                        <Burger title="more me">
-                            <Nugget letter='B' url='http://thirdstallwoodworking.com' text='third stall woodworking' />
-                            <Nugget letter='R' download='Andy Buboltz Resume' url={resume} text='resume' />
-                        </Burger>
-                    </Meal>
+                        <Bun title="more me">
+                            <Patty letter='B' url='http://thirdstallwoodworking.com' text='third stall woodworking' />
+                            <Patty letter='R' download='Andy Buboltz Resume' url={resume} text='resume' />
+                        </Bun>
+                    </Burger>
                 </div>
             </div>
         );
