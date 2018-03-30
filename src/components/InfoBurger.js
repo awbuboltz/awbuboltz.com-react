@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 
-import { Anchor } from './Anchor';
-
-export class SocialLinks extends Component {
+export class InfoBurger extends Component {
 
     render() {
         const links = this.props.socialLinks.map((linkData, i) => {
@@ -13,6 +11,6 @@ export class SocialLinks extends Component {
     }
 }
 
-SocialLinks.defaultPrpops = {
+InfoBurger.defaultPrpops = {
     socialLinks: []
 };

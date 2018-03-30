@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import me from './images/me.jpg';
-import resume from './files/AndyBuboltzResume.pdf';
+import resume from './files/Andy Buboltz Resume.pdf';
 
 import { InfoNugget } from './components/InfoNugget';
 import { SocialLinks } from './components/SocialLinks';
@@ -46,7 +46,7 @@ class App extends Component {
                         <h3>more me</h3>
                         <ul className='connect'>
                             <InfoNugget letter='B' url='http://thirdstallwoodworking.com' text='third stall woodworking' />
-                            <InfoNugget letter='R' url={resume} text='resume' />
+                            <InfoNugget letter='R' download='Andy Buboltz Resume' url={resume} text='resume' />
                         </ul>
                     </div>
                 </div>
