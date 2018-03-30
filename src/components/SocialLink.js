@@ -27,8 +27,8 @@ export class SocialLink extends Component {
         return (
             <Anchor
                 class={`icon ${this.props.icon} ${hoverClass}`}
-                onMouseEnter={this.hoverHandler.bind(this)}
-                onMouseLeave={this.hoverHandler.bind(this)}
+                onMouseEnter={this.hoverHandler}
+                onMouseLeave={this.hoverHandler}
                 text={this.props.text}
                 url={this.props.url}
             />
