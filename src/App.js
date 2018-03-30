@@ -34,7 +34,7 @@ class App extends Component {
                     </Burger>
 
                     <Burger>
-                        <Bun title="connect">
+                        <Bun title="Connect">
                             <Patty letter='E' url='mailto:andy@awbuboltz.com' text='andy@awbuboltz.com' target='_top'/>
                             <Patty letter='C' text='507-402-6246' />
                             <Patty letter='S'>
@@ -42,9 +42,9 @@ class App extends Component {
                             </Patty>
                         </Bun>
 
-                        <Bun title="more me">
-                            <Patty letter='B' url='http://thirdstallwoodworking.com' text='third stall woodworking' />
-                            <Patty letter='R' download='Andy Buboltz Resume' url={resume} text='resume' />
+                        <Bun title="More me">
+                            <Patty letter='B' url='http://thirdstallwoodworking.com' text='Third Stall Woodworking' />
+                            <Patty letter='R' download='Andy Buboltz Resume' url={resume} text='Resume' />
                         </Bun>
                     </Burger>
                 </div>
