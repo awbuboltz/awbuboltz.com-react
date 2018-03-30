@@ -3,14 +3,13 @@ import React, { Component } from 'react';
 export class InfoBurger extends Component {
 
     render() {
-        const links = this.props.socialLinks.map((linkData, i) => {
-            return <Anchor {...linkData} key={i} />;
-        });
-
-        return (<p>{links}</p>);
+        return (
+            <div>
+                <h3>{this.props.title}</h3>
+                <ul className="connect">
+                    {this.props.children}
+                </ul>
+            </div>
+        );
     }
 }
-
-InfoBurger.defaultPrpops = {
-    socialLinks: []
-};

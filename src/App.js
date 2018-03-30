@@ -4,6 +4,7 @@ import resume from './files/Andy Buboltz Resume.pdf';
 
 import { InfoNugget } from './components/InfoNugget';
 import { SocialLinks } from './components/SocialLinks';
+import { InfoBurger } from "./components/InfoBurger";
 
 class App extends Component {
 
@@ -34,20 +35,18 @@ class App extends Component {
 
                     <div className='component'>
 
-                        <h3>connect</h3>
-                        <ul className='connect'>
+                        <InfoBurger title="connect">
                             <InfoNugget letter='E' url='mailto:andy@awbuboltz.com' text='andy@awbuboltz.com' target='_top'/>
                             <InfoNugget letter='C' text='507-402-6246' />
                             <InfoNugget letter='S'>
                                 <SocialLinks socialLinks={this.state.social} />
                             </InfoNugget>
-                        </ul>
+                        </InfoBurger>
 
-                        <h3>more me</h3>
-                        <ul className='connect'>
+                        <InfoBurger title="more me">
                             <InfoNugget letter='B' url='http://thirdstallwoodworking.com' text='third stall woodworking' />
                             <InfoNugget letter='R' download='Andy Buboltz Resume' url={resume} text='resume' />
-                        </ul>
+                        </InfoBurger>
                     </div>
                 </div>
             </div>
