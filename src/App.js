@@ -9,18 +9,13 @@ import { SocialLinks } from './components/SocialLinks';
 
 class App extends Component {
 
-    constructor() {
-        super();
-        this.state = {
-            social: [
-                { text: 'LinkedIn',  url: 'http://www.linkedin.com/pub/andy-buboltz/24/65b/697', icon: 'linkedin' },
-                { text: 'Facebook', url: 'https://www.facebook.com/buboltz', icon: 'facebook' },
-                { text: 'Instagram', url: 'https://www.instagram.com/awbuboltz', icon: 'instagram' }
-            ]
-        };
-    }
-
     render() {
+        const socialLinks = [
+            { text: 'LinkedIn',  url: 'http://www.linkedin.com/pub/andy-buboltz/24/65b/697', icon: 'linkedin' },
+            { text: 'Facebook', url: 'https://www.facebook.com/buboltz', icon: 'facebook' },
+            { text: 'Instagram', url: 'https://www.instagram.com/awbuboltz', icon: 'instagram' }
+        ];
+
         return (
             <div className='fullHeight'>
                 <div className='shim' />
@@ -38,7 +33,7 @@ class App extends Component {
                             <Patty letter='E' url='mailto:andy@awbuboltz.com' text='andy@awbuboltz.com' target='_top'/>
                             <Patty letter='C' text='507-402-6246' />
                             <Patty letter='S'>
-                                <SocialLinks socialLinks={this.state.social} />
+                                <SocialLinks socialLinks={socialLinks} />
                             </Patty>
                         </Bun>
 
