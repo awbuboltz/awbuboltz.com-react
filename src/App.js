@@ -7,7 +7,7 @@ import { Bun } from "./components/Bun";
 import { Patty } from './components/Patty';
 import { SocialLinks } from './components/SocialLinks';
 
-class App extends Component {
+export class App extends Component {
 
     render() {
         const socialLinks = [
@@ -47,5 +47,3 @@ class App extends Component {
         );
     }
 }
-
-export default App;
