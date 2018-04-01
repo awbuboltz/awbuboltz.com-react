@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import { Anchor } from './Anchor';
 
 export class SocialLink extends Component {
