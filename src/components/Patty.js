@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Anchor } from './Anchor';
 
 export const Patty = (props) => {
@@ -23,4 +24,15 @@ export const Patty = (props) => {
             <p>{content}</p>
         </li>
     );
+};
+
+Patty.defaultProps = {
+    text: ''
+};
+
+Patty.propTypes = {
+    children: PropTypes.element,
+    letter: PropTypes.string,
+    text: PropTypes.string,
+    url: PropTypes.string
 };

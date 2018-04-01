@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { SocialLink } from './SocialLink';
 
 export const SocialLinks = (props) => {
@@ -13,6 +14,10 @@ export const SocialLinks = (props) => {
     return (<span>{socialLinks}</span>);
 };
 
-SocialLinks.defaultPrpops = {
+SocialLinks.defaultProps = {
     socialLinks: []
+};
+
+SocialLinks.propTypes = {
+    socialLinks: PropTypes.array.isRequired
 };

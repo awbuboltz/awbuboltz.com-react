@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export const Burger = (props) => {
     return (
@@ -6,4 +7,8 @@ export const Burger = (props) => {
             {props.children}
         </div>
     );
+};
+
+Burger.propTypes = {
+    children: PropTypes.array.isRequired
 };

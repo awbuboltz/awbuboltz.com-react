@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export const Bun = (props) => {
     return (
@@ -9,4 +10,9 @@ export const Bun = (props) => {
             </ul>
         </div>
     );
+};
+
+Bun.propTypes = {
+    children: PropTypes.array.isRequired,
+    title: PropTypes.string.isRequired
 };

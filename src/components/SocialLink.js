@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Anchor } from './Anchor';
 
 export class SocialLink extends Component {
@@ -34,3 +35,9 @@ export class SocialLink extends Component {
         );
     }
 }
+
+SocialLink.propTypes = {
+    icon: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired
+};
