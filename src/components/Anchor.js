@@ -1,24 +1,21 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export class Anchor extends Component {
+export const Anchor = (props) => {
+    const p = props;
 
-    render() {
-        const p = this.props;
-
-        return (
-            <a
-                href={p.url}
-                rel='noopener noreferrer'
-                target={p.target}
-                title={p.text}
-                onMouseEnter={this.props.onMouseEnter}
-                onMouseLeave={this.props.onMouseLeave}
-                className={this.props.class}>
-                {p.text}
-            </a>
-        );
-    }
-}
+    return (
+        <a
+            href={p.url}
+            rel='noopener noreferrer'
+            target={p.target}
+            title={p.text}
+            onMouseEnter={props.onMouseEnter}
+            onMouseLeave={props.onMouseLeave}
+            className={props.class}>
+            {p.text}
+        </a>
+    );
+};
 
 Anchor.defaultProps = {
     class: '',

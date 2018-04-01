@@ -1,15 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export class Bun extends Component {
-
-    render() {
-        return (
-            <div>
-                <h3>{this.props.title}</h3>
-                <ul className="connect">
-                    {this.props.children}
-                </ul>
-            </div>
-        );
-    }
-}
+export const Bun = (props) => {
+    return (
+        <div>
+            <h3>{props.title}</h3>
+            <ul className="connect">
+                {props.children}
+            </ul>
+        </div>
+    );
+};

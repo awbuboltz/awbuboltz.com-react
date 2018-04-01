@@ -1,12 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export class Burger extends Component {
-
-    render() {
-        return (
-            <div className="component">
-                {this.props.children}
-            </div>
-        );
-    }
-}
+export const Burger = (props) => {
+    return (
+        <div className="component">
+            {props.children}
+        </div>
+    );
+};

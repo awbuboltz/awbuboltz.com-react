@@ -1,21 +1,17 @@
-import React, { Component } from 'react';
-
+import React from 'react';
 import { SocialLink } from './SocialLink';
 
-export class SocialLinks extends Component {
+export const SocialLinks = (props) => {
+    const socialLinks = props.socialLinks.map((linkData, i) => {
+        return <SocialLink
+            key={i}
+            icon={linkData.icon}
+            text={linkData.text}
+            url={linkData.url} />;
+    });
 
-    render() {
-        const socialLinks = this.props.socialLinks.map((linkData, i) => {
-            return <SocialLink
-                key={i}
-                icon={linkData.icon}
-                text={linkData.text}
-                url={linkData.url} />;
-        });
-
-        return (<span>{socialLinks}</span>);
-    }
-}
+    return (<span>{socialLinks}</span>);
+};
 
 SocialLinks.defaultPrpops = {
     socialLinks: []

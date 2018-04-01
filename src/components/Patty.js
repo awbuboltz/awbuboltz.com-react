@@ -1,30 +1,26 @@
-import React, { Component } from 'react';
-
+import React from 'react';
 import { Anchor } from './Anchor';
 
-export class Patty extends Component {
+export const Patty = (props) => {
+    let content;
 
-    render() {
-        let content;
-
-        if (this.props.children) {
-            // social links
-            content = this.props.children;
-        }
-        else if (this.props.url) {
-            // link
-            content = <Anchor {...this.props} />
-        }
-        else {
-            // just rendering some text
-            content = this.props.text
-        }
-
-        return (
-            <li>
-                <h3>{this.props.letter}</h3>
-                <p>{content}</p>
-            </li>
-        );
+    if (props.children) {
+        // social links
+        content = props.children;
     }
-}
+    else if (props.url) {
+        // link
+        content = <Anchor {...props} />
+    }
+    else {
+        // just rendering some text
+        content = props.text
+    }
+
+    return (
+        <li>
+            <h3>{props.letter}</h3>
+            <p>{content}</p>
+        </li>
+    );
+};
