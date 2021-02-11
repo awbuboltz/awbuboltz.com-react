@@ -10,10 +10,14 @@ import { SocialLinks } from './components/SocialLinks';
 export class App extends Component {
 
     render() {
-        const socialLinks = [
+        const personalLinks = [
             { text: 'LinkedIn',  url: 'http://www.linkedin.com/pub/andy-buboltz/24/65b/697', icon: 'linkedin' },
             { text: 'Facebook', url: 'https://www.facebook.com/buboltz', icon: 'facebook' },
-            { text: 'Instagram', url: 'https://www.instagram.com/awbuboltz', icon: 'instagram' }
+            { text: 'Instagram', url: 'https://www.instagram.com/awbuboltz', icon: 'instagram' },
+            { text: 'GitHub', url: 'https://github.com/awbuboltz', icon: 'github' }
+        ];
+        const tswLinks = [
+            { text: 'Instagram', url: 'https://www.instagram.com/thirdstallwoodworking', icon: 'instagram' }
         ];
 
         return (
@@ -30,16 +34,18 @@ export class App extends Component {
 
                     <Burger>
                         <Bun title="Connect">
-                            <Patty letter='E' url='mailto:andy@awbuboltz.com' text='andy@awbuboltz.com' target='_top'/>
-                            <Patty letter='C' text='507-402-6246' />
-                            <Patty letter='S'>
-                                <SocialLinks socialLinks={socialLinks} />
+                            <Patty url='mailto:andy@awbuboltz.com' text='andy@awbuboltz.com' target='_top'/>
+                            <Patty >
+                                <SocialLinks socialLinks={personalLinks} />
                             </Patty>
                         </Bun>
 
                         <Bun title="More me">
-                            <Patty letter='B' url='http://thirdstallwoodworking.com' text='Third Stall Woodworking' />
-                            <Patty letter='R' download='Andy Buboltz Resume' url={resume} text='Resume' />
+                            <Patty url='http://thirdstallwoodworking.com' text='Third Stall Woodworking' />
+                            <Patty>
+                                <SocialLinks socialLinks={tswLinks} />
+                            </Patty>
+                            <Patty download='Andy Buboltz Resume' url={resume} text='Resume' />
                         </Bun>
                     </Burger>
                 </div>

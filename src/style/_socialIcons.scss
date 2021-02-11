@@ -1,105 +1,40 @@
 .icon {
-  width: 32px;
-  height: 33px;
-  zoom: 0.85;
-  -moz-transform: scale(0.85);
+  width: 120px;
+  height: 119px;
+  zoom: 0.25;
+  -moz-transform: scale(0.25);
   -moz-transform-origin: 0 0;
   display: inline-block;
-  margin-right: 0.75rem;
-  background: url(/socialSprite.png) no-repeat;
+  border-radius: 25px;
+  margin-right: 2rem;
+  background: url(/sprites.png) no-repeat;
   line-height: 0;
   font-size: 0;
   color: transparent;
   float: left;
 
   &.facebook {
-    background-position: 0 -73px;
+    background-position: -1403px -37px;
   }
   &.facebook.hover {
-    background-position: -38px -73px;
-  }
-  &.twitter {
-    background-position: 0 -109px;
-  }
-  &.twitter.hover {
-    background-position: -38px -109px;
-  }
-  &.youtube {
-    background-position: 0 -219px;
-  }
-  &.youtube.hover {
-    background-position: -38px -219px;
+    background-position: -1403px -942px;
   }
   &.linkedin {
-    background-position: 0 -292px;
+    background-position: -1101px -188px;
   }
   &.linkedin.hover {
-    background-position: -38px -292px;
-  }
-  &.wordpress {
-    background-position: 0 -475px;
-  }
-  &.wordpress.hover {
-    background-position: -38px -475px;
-  }
-  &.twitterb {
-    background-position: 0 -658px;
-  }
-  &.twitterb.hover {
-    background-position: -38px -658px;
+    background-position: -1101px -1093px;
   }
   &.instagram {
-    background-position: 0 -731px;
+    background-position: -950px -188px;
   }
   &.instagram.hover {
-    background-position: -38px -731px;
-  }
-  &.ichat {
-    background-position: 0 -946px;
-  }
-  &.ichat.hover {
-    background-position: -38px -946px;
+    background-position: -950px -1093px;
   }
   &.github {
-    background-position: 0 -981px;
+    background-position: -1554px -37px;
   }
   &.github.hover {
-    background-position: -38px -981px;
-  }
-  &.reddit {
-    background-position: 0 -1338px;
-  }
-  &.reddit.hover {
-    background-position: -38px -1338px;
-  }
-  &.amazon {
-    background-position: 0 -1445px;
-  }
-  &.amazon.hover {
-    background-position: -38px -1445px;
-  }
-  &.email {
-    background-position: 0 -1623px;
-  }
-  &.email.hover {
-    background-position: -38px -1623px;
-  }
-  &.paypal {
-    background-position: 0 -1695px;
-  }
-  &.paypal.hover {
-    background-position: -38px -1695px;
-  }
-  &.etsy {
-    background-position: 0 -1980px;
-  }
-  &.etsy.hover {
-    background-position: -38px -1980px;
-  }
-  &.stackoverflow {
-    background-position: 0 -2016px;
-  }
-  &.stackoverflow.hover {
-    background-position: -38px -2016px;
+    background-position: -1554px -942px;
   }
 }

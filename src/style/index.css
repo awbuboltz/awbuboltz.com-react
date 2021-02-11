@@ -1,160 +1,147 @@
-@import url(reset.css);
-@import "https://fonts.googleapis.com/css?family=Ubuntu";
+@import 'reset.css';
+@import 'https://fonts.googleapis.com/css?family=Ubuntu';
 .icon {
-  width: 32px;
-  height: 33px;
-  zoom: 0.85;
-  -moz-transform: scale(0.85);
+  width: 120px;
+  height: 119px;
+  zoom: 0.25;
+  -moz-transform: scale(0.25);
   -moz-transform-origin: 0 0;
   display: inline-block;
-  margin-right: 0.75rem;
-  background: url(/socialSprite.png) no-repeat;
+  border-radius: 25px;
+  margin-right: 2rem;
+  background: url(/sprites.png) no-repeat;
   line-height: 0;
   font-size: 0;
   color: transparent;
-  float: left; }
-  .icon.facebook {
-    background-position: 0 -73px; }
-  .icon.facebook.hover {
-    background-position: -38px -73px; }
-  .icon.twitter {
-    background-position: 0 -109px; }
-  .icon.twitter.hover {
-    background-position: -38px -109px; }
-  .icon.youtube {
-    background-position: 0 -219px; }
-  .icon.youtube.hover {
-    background-position: -38px -219px; }
-  .icon.linkedin {
-    background-position: 0 -292px; }
-  .icon.linkedin.hover {
-    background-position: -38px -292px; }
-  .icon.wordpress {
-    background-position: 0 -475px; }
-  .icon.wordpress.hover {
-    background-position: -38px -475px; }
-  .icon.twitterb {
-    background-position: 0 -658px; }
-  .icon.twitterb.hover {
-    background-position: -38px -658px; }
-  .icon.instagram {
-    background-position: 0 -731px; }
-  .icon.instagram.hover {
-    background-position: -38px -731px; }
-  .icon.ichat {
-    background-position: 0 -946px; }
-  .icon.ichat.hover {
-    background-position: -38px -946px; }
-  .icon.github {
-    background-position: 0 -981px; }
-  .icon.github.hover {
-    background-position: -38px -981px; }
-  .icon.reddit {
-    background-position: 0 -1338px; }
-  .icon.reddit.hover {
-    background-position: -38px -1338px; }
-  .icon.amazon {
-    background-position: 0 -1445px; }
-  .icon.amazon.hover {
-    background-position: -38px -1445px; }
-  .icon.email {
-    background-position: 0 -1623px; }
-  .icon.email.hover {
-    background-position: -38px -1623px; }
-  .icon.paypal {
-    background-position: 0 -1695px; }
-  .icon.paypal.hover {
-    background-position: -38px -1695px; }
-  .icon.etsy {
-    background-position: 0 -1980px; }
-  .icon.etsy.hover {
-    background-position: -38px -1980px; }
-  .icon.stackoverflow {
-    background-position: 0 -2016px; }
-  .icon.stackoverflow.hover {
-    background-position: -38px -2016px; }
+  float: left;
+}
+.icon.facebook {
+  background-position: -1403px -37px;
+}
+.icon.facebook.hover {
+  background-position: -1403px -942px;
+}
+.icon.linkedin {
+  background-position: -1101px -188px;
+}
+.icon.linkedin.hover {
+  background-position: -1101px -1093px;
+}
+.icon.instagram {
+  background-position: -950px -188px;
+}
+.icon.instagram.hover {
+  background-position: -950px -1093px;
+}
+.icon.github {
+  background-position: -1554px -37px;
+}
+.icon.github.hover {
+  background-position: -1554px -942px;
+}
 
 body {
   background: #000;
-  color: #fff; }
+  color: #fff;
+}
 
 #root, div.fullHeight {
-  height: 100%; }
+  height: 100%;
+}
 
 div.shim {
   visibility: hidden;
   width: 100%;
-  height: 50%; }
+  height: 50%;
+}
 
 a {
   color: #fff;
-  font-size: 1.25rem; }
+  font-size: 1.25rem;
+}
 
 h1, h2, h3, h4 {
-  font-family: 'Ubuntu', sans-serif; }
+  font-family: "Ubuntu", sans-serif;
+}
 
 h1, h4 {
-  color: #fff; }
+  color: #fff;
+}
 
 h2, h3 {
-  color: #ffe400; }
+  color: #ffe400;
+}
 
 h1 {
-  font-size: 4rem; }
+  font-size: 4rem;
+}
 
 h2 {
-  font-size: 2.5rem; }
+  font-size: 2.5rem;
+}
 
 h3 {
-  font-size: 1.75rem; }
+  font-size: 1.75rem;
+}
 
 h4 {
-  font-size: 1.25rem; }
+  font-size: 1.25rem;
+}
 
 div.content {
   width: 50rem;
   margin: 0 auto;
   clear: both;
   position: relative;
-  top: -9rem; }
-  div.content div.component {
-    height: 17rem;
-    float: left; }
-    div.content div.component:nth-of-type(1) {
-      text-align: right;
-      min-width: 19rem;
-      padding: 2.5rem 2.5rem 0 0; }
-      div.content div.component:nth-of-type(1) h1 {
-        margin-right: 9rem; }
-      div.content div.component:nth-of-type(1) h2 {
-        margin: 0.75rem 0; }
-      div.content div.component:nth-of-type(1) img.me {
-        border-radius: 50%;
-        float: right;
-        margin-top: .2rem;
-        width: 122px;
-        height: 122px; }
-    div.content div.component:nth-of-type(2) {
-      min-width: 18rem;
-      padding-left: 2.5rem;
-      border-left: 1px solid #303030; }
-      div.content div.component:nth-of-type(2) ul.connect {
-        width: 100%;
-        margin: 0.75rem 0 1rem 0;
-        float: left; }
-        div.content div.component:nth-of-type(2) ul.connect li {
-          margin-bottom: 0.5rem;
-          height: 1.75rem; }
-          div.content div.component:nth-of-type(2) ul.connect li h3 {
-            color: #595959;
-            font-size: 1.5rem;
-            float: left;
-            margin-right: 1rem;
-            line-height: 1.75rem;
-            width: 1.5rem;
-            text-align: center; }
-          div.content div.component:nth-of-type(2) ul.connect li p {
-            font-size: 1.25rem;
-            line-height: 1.5rem; }
+  top: -9rem;
+}
+div.content div.component {
+  float: left;
+}
+div.content div.component:nth-of-type(1) {
+  text-align: right;
+  min-width: 19rem;
+  padding: 1.5rem 2.5rem 0 0;
+}
+div.content div.component:nth-of-type(1) h1 {
+  margin-right: 9rem;
+}
+div.content div.component:nth-of-type(1) h2 {
+  margin: 0.75rem 0;
+}
+div.content div.component:nth-of-type(1) img.me {
+  border-radius: 50%;
+  float: right;
+  margin-top: 0.2rem;
+  width: 122px;
+  height: 122px;
+}
+div.content div.component:nth-of-type(2) {
+  min-width: 18rem;
+  padding: 1em 0 0 2.5rem;
+  border-left: 1px solid #303030;
+}
+div.content div.component:nth-of-type(2) ul.connect {
+  width: 100%;
+  margin: 0.75rem 0 1rem 0;
+  float: left;
+}
+div.content div.component:nth-of-type(2) ul.connect li {
+  margin-bottom: 0.5rem;
+  height: 1.75rem;
+}
+div.content div.component:nth-of-type(2) ul.connect li h3 {
+  color: #595959;
+  font-size: 1.5rem;
+  float: left;
+  margin-right: 1rem;
+  line-height: 1.75rem;
+  width: 1.5rem;
+  text-align: center;
+}
+div.content div.component:nth-of-type(2) ul.connect li p {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
 
 /*# sourceMappingURL=index.css.map */
