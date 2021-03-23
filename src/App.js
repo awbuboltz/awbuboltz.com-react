@@ -41,7 +41,7 @@ export class App extends Component {
                         </Bun>
 
                         <Bun title="More me">
-                            <Patty url='http://thirdstallwoodworking.com' text='Third Stall Woodworking' />
+                            <Patty url='https://thirdstallwoodworking.com' text='Third Stall Woodworking' />
                             <Patty>
                                 <SocialLinks socialLinks={tswLinks} />
                             </Patty>
